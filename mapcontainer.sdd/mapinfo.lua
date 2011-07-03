@@ -206,10 +206,10 @@ local mapinfo = {
 	},
 
 	teams = {
-		[0] = {startPos = {x = 2033, y = 852}},
-		[1] = {startPos = {x = 10134, y = 852}},
-		[2] = {startPos = {x = 0, y = 0}},
-		[3] = {startPos = {x = 0, y = 0}},
+		[0] = {startPos = {x = 2033, z = 852}},
+		[1] = {startPos = {x = 10134, z = 852}},
+		[2] = {startPos = {x = 0, z = 0}},
+		[3] = {startPos = {x = 0, z = 0}},
 	},
 
 	terrainTypes = {
