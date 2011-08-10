@@ -129,7 +129,7 @@ local GLSLRenderer = true
 local forceNonGLSL = false -- force using the non-GLSL renderer
 local post83 = false
 do
-	local engv = tonumber("0." .. Game.version:gsub("[%.%+]",""):sub(2)) 
+	local engv = tonumber("0." .. Game.version:gsub("[^%d]",""):sub(2)) 
 	engv = engv + (Game.version:find("+") and 0.01 or 0)
 	post83 = (engv >= 0.83)
 end
