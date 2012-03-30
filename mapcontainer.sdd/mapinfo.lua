@@ -272,7 +272,7 @@ lowerkeys(mapinfo)
 --------------------------------------------------------------------------------
 -- Map Options
 
-do
+if (Spring.GetMapOptions) do
 	local function tmerge(t1, t2)
 		for i,v in pairs(t2) do
 			if (type(v) == "table") then
