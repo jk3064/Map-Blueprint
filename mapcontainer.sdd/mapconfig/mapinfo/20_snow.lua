@@ -36,7 +36,7 @@ local cfg = {
 	},
 }
 
-if (Spring.GetMapOptions().fog == "1") then
+if (tobool(Spring.GetMapOptions().fog)) then
 	cfg.atmosphere.fogStart = 0.4
 	cfg.atmosphere.fogEnd   = 0.85
 end

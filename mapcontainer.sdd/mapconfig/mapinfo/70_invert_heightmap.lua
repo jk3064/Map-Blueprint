@@ -2,7 +2,7 @@
 -- Inverted Heightmap
 --------------------------------------------------------------------------------------------------------
 
-if (Spring.GetMapOptions().inv == "0" or Spring.GetMapOptions().inv == nil) then
+if (not tobool(Spring.GetMapOptions().inv)) then
 	return
 end
 

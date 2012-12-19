@@ -2,7 +2,7 @@
 -- Night settings
 --------------------------------------------------------------------------------------------------------
 
-if (Spring.GetMapOptions and Spring.GetMapOptions().timeofday ~= "dawn") then
+if (Spring.GetMapOptions().timeofday ~= "dawn") then
 	return
 end
 

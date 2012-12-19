@@ -272,7 +272,7 @@ lowerkeys(mapinfo)
 --------------------------------------------------------------------------------
 -- Map Options
 
-if (Spring and Spring.GetMapOptions) then
+if (Spring) then
 	local function tmerge(t1, t2)
 		for i,v in pairs(t2) do
 			if (type(v) == "table") then
@@ -282,6 +282,24 @@ if (Spring and Spring.GetMapOptions) then
 				t1[i] = v
 			end
 		end
+	end
+
+	-- make code safe in unitsync
+	if (not Spring.GetMapOptions) then
+		Spring.GetMapOptions = function() return {} end
+	end
+	function tobool(val)
+		local t = type(val)
+		if (t == 'nil') then
+			return false
+		elseif (t == 'boolean') then
+			return val
+		elseif (t == 'number') then
+			return (val ~= 0)
+		elseif (t == 'string') then
+			return ((val ~= '0') and (val ~= 'false'))
+		end
+		return false
 	end
 
 	getfenv()["mapinfo"] = mapinfo

@@ -2,7 +2,7 @@
 -- MetalExtractor radius settings
 --------------------------------------------------------------------------------------------------------
 
-if (not Spring.GetMapOptions().extractorradius) then
+if (not tobool(Spring.GetMapOptions().extractorradius)) then
 	return
 end
 
