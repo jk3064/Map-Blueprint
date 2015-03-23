@@ -52,7 +52,7 @@ if ( featurecfg ) then
 		end
 	end
 
-	if ( buildinglist ) then
+	if ( unitlist ) then
 		local los_status = {los=true, prevLos=true, contRadar=true, radar=true}
 		for i,uDef in pairs(unitlist) do
 			local flagID = CreateUnit(uDef.name, uDef.x, 0, uDef.z, 0, gaiaID)
