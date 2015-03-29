@@ -42,7 +42,7 @@ local mapinfo = {
 		--// passfilter (the direct sound) is unchanged.
 		--//
 		--// To get a list of all possible presets check:
-		--//   https://github.com/spring/spring/blob/master/rts/System/Sound/EFXPresets.cpp
+		--//   https://github.com/spring/spring/blob/develop/rts/System/Sound/OpenAL/EFXPresets.cpp
 		--//
 		--// Hint:
 		--// You can change the preset at runtime via:
